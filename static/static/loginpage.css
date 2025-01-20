@@ -1,0 +1,67 @@
+.body  
+{
+    background-image: url("https://img.freepik.com/premium-photo/abstract-multi-color-powder-explosion-white-background-freeze-motion-dust-particles-splash_36326-3453.jpg?w=740");  
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 150px;   
+    font-family: Arial, Helvetica, sans-serif; 
+}  
+.head{
+    padding-top: 50px;
+    color: #23463f;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
+    font-weight: bolder;
+    text-align: center;
+}
+.login{  
+        width: 447px;  
+        margin: auto;  
+        margin: 20 0 0 450px;  
+        padding: 80px;  
+        background:#23463f;  
+        border-radius: 15px ; 
+        text-align: center;          
+} 
+.signin{
+    padding-top: 20px;
+    padding-right: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+label{  
+    color: #08ffd1;  
+    font-size: 17px;  
+}  
+#Uname{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+}  
+#Pass{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 3px;  
+    padding-left: 8px;  
+      
+}  
+#log{  
+    width: 300px;  
+    height: 30px;  
+    border: none;  
+    border-radius: 17px;  
+    padding-left: 7px;  
+    color:blue;  
+  
+  
+}  
+span{  
+    color: white;  
+    font-size: 17px;  
+}  
+a{  
+    float: right;  
+}
