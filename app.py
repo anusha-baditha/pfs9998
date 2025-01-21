@@ -4,7 +4,7 @@ from stoken import encode,decode
 from cmail import sendmail
 import os
 import re
-import razorpay
+#import razorpay
 from mysql.connector import (connection)
 import mysql.connector
 #mydb=connection.MySQLConnection(user='root',host='localhost',password='admin',db='ecommi')
@@ -27,7 +27,7 @@ app.config['SESSION_TYPE']='filesystem'
 app.secret_key='code@123'
 RAZORPAY_KEY_ID='rzp_test_BdYxoi5GaEITjc'
 RAZORPAY_KEY_SECRET='H0FUH2n4747ZSYBRyCn2D6rc'
-client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
+#client=razorpay.Client(auth=(RAZORPAY_KEY_ID,RAZORPAY_KEY_SECRET))
 @app.route('/')
 def home():
     return render_template('welcome.html')
@@ -480,7 +480,7 @@ def description(itemid):
         flash('could not fetch items')
         return redirect(url_for('index'))
     return render_template('description.html',item_data=item_data)
-@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
+'''@app.route('/pay/<itemid>/<name>/<float:price>',methods=['GET','POST'])
 def pay(itemid,name,price):
     try:
         qyt=int(request.form['qyt'])
@@ -526,7 +526,7 @@ def success():
         flash('order placed successfully')
         return 'success'
     except razorpay.errors.SignatureVerificationError:
-        return 'Payment  verification failed!',400
+        return 'Payment  verification failed!',400'''
 @app.route('/orders')
 def orders():
     if session.get('user'):
